@@ -143,7 +143,7 @@ export default function Form() {
           <div className={styles.error}>{errors.registrationDate.message}</div>
         )}
         <div className={styles.formField}>
-          <label htmlFor="notifications">Are you subscribed</label>
+          <label htmlFor="notifications">Are you have notifications</label>
           <input type="checkbox" {...register("notifications")} />
         </div>
         {errors.notifications && (

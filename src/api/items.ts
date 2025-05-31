@@ -3,7 +3,7 @@ import { setFalse, setTrue } from "../state/submited/submitSlice";
 import type { TableItem } from "./types";
 import { v4 as uuidv4 } from "uuid";
 const API_URL = "http://localhost:3000";
-const LIMIT = 20;
+const LIMIT = 10;
 
 const getYearMonthDay = (): string => {
   const now = new Date();
