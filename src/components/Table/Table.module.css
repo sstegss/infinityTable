@@ -1,0 +1,43 @@
+.h1 {
+  justify-self: center;
+}
+table {
+  margin: 0 auto;
+  width: 80vw;
+  text-align: center;
+  background: #323232;
+  color: white;
+  border-collapse: collapse;
+}
+
+td {
+  /* решить пробему с шириной  */
+  max-width: 10%;
+  padding: 1rem;
+}
+tr:nth-of-type(2n) {
+  background: rgba(0, 0, 0, 0.05);
+}
+thead {
+  position: sticky;
+  top: 15px;
+  z-index: 10;
+  background-color: #434343;
+  font-weight: 700;
+}
+
+.loading {
+  justify-self: center;
+  width: 50px;
+  height: 50px;
+  border: 10px solid gray;
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
